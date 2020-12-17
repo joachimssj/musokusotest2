@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import './App.css';
 
 const isSafari = () => {
     const ua = navigator.userAgent.toLowerCase();
@@ -84,11 +85,13 @@ export default function App() {
         <img src={mainVideo} alt="Muted Video" />
     ) : (
         <div
+            className={'bg-video'}
             onClick={() => pressVideo()}
             ref={videoParentRef}
             dangerouslySetInnerHTML={{
                 __html: `
         <video
+        class="bg-video__content"
           loop
           muted
           autoplay

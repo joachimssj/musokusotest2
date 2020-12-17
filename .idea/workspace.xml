@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3467d6f3-ed43-4aa3-8547-a2c4fcc6fe88" name="Default Changelist" comment="test muted">
-      <change afterPath="$PROJECT_DIR$/src/loadingImg.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loadingImg_mobile.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/musokuso_comingsoon.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/musokuso_comingsoon_Mobile.mp4" afterDir="false" />
+    <list default="true" id="3467d6f3-ed43-4aa3-8547-a2c4fcc6fe88" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
@@ -70,16 +65,29 @@
       <option name="presentableId" value="Default" />
       <updated>1608148782998</updated>
       <workItem from="1608148787048" duration="3766000" />
+      <workItem from="1608164568661" duration="323000" />
     </task>
+    <task id="LOCAL-00001" summary="first test">
+      <created>1608164697035</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608164697036</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first test" />
+    <option name="LAST_COMMIT_MESSAGE" value="first test" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1019" y="132" key="CommitChangelistDialog2" timestamp="1608149866333">
+    <state x="1019" y="132" key="CommitChangelistDialog2" timestamp="1608164696470">
       <screen x="0" y="23" width="1920" height="1012" />
     </state>
-    <state x="1019" y="132" key="CommitChangelistDialog2/0.23.1920.1012@0.23.1920.1012" timestamp="1608149866333" />
+    <state x="1019" y="132" key="CommitChangelistDialog2/0.23.1920.1012@0.23.1920.1012" timestamp="1608164696470" />
   </component>
 </project>
