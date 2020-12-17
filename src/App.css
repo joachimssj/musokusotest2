@@ -39,6 +39,10 @@
 
 /*-----------------*/
 
+html {
+  background: black;
+}
+
 .bg-video {
   position: absolute;
   top:0;

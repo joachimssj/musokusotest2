@@ -1,19 +1,21 @@
 import React, { useRef, useState, useEffect } from "react";
+import {isMobile} from 'react-device-detect';
 import './App.css';
+
+import videoHD from './musokuso_comingsoon.mp4';
+import videoMobile from './musokuso_comingsoon_Mobile.mp4';
+import loadingImage from './loadingImg.jpeg';
+import loadingImageMobile from './loadingImg_mobile.jpeg'
 
 const isSafari = () => {
     const ua = navigator.userAgent.toLowerCase();
     return ua.indexOf("safari") > -1 && ua.indexOf("chrome") < 0;
 };
 
-const mainVideo =
-    "https://cdn.shopify.com/s/files/1/0515/1293/4600/files/musokuso_comingsoon_online-video-cutter.com.mp4?v=1608128488";
-
 export default function App() {
     const videoParentRef = useRef();
     const [shouldUseImage, setShouldUseImage] = useState(false);
     const [isMuted, setIsMuted] = useState(true);
-    const [isMutedMobile, setIsMutedMobile] = useState(true);
 
     useEffect(() => {
         // check if user agent is safari and we have the ref to the container <div />
@@ -51,6 +53,8 @@ export default function App() {
     }, []);
 
     const pressVideo = () => {
+        const newIsMute = !isMuted;
+        setIsMuted(newIsMute);
         const player = videoParentRef.current.children[0];
 
         // if the reference to video player has been obtained
@@ -59,7 +63,7 @@ export default function App() {
             // webkit Policy
             player.controls = false;
             player.playsinline = true;
-            player.muted = false;
+            player.muted = newIsMute;
             player.setAttribute("muted", ""); // leave no stones unturned :)
             player.autoplay = true;
 
@@ -79,10 +83,10 @@ export default function App() {
                 }
             }, 0);
         }
-    }
+    };
 
     return shouldUseImage ? (
-        <img src={mainVideo} alt="Muted Video" />
+        <img src={loadingImage} alt="Muted Video" />
     ) : (
         <div
             className={'bg-video'}
@@ -97,8 +101,9 @@ export default function App() {
           autoplay
           playsinline
           preload="metadata"
+          poster="${(isMobile)?loadingImageMobile:loadingImage}"
         >
-        <source src="${mainVideo}" type="video/mp4" />
+        <source src="${(isMobile)?videoMobile:videoHD}" type="video/mp4" />
         </video>`
             }}
         />
